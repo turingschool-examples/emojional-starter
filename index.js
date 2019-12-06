@@ -1,4 +1,7 @@
 const happyEmoji = document.getElementById('happy-emoji');
+const sillyEmoji = document.getElementById('silly-emoji');
+const cryingEmoji = document.getElementById('crying-emoji');
+
 const emojiMessage = document.getElementById('emoji-message');
 
 happyEmoji.addEventListener('click', function () {
