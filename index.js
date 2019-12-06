@@ -20,3 +20,14 @@ function addSillyMessage() {
   var randomSilly = sillyMessage[Math.floor(Math.random()*sillyMessage.length)];
   message.innerText = randomSilly;
 }
+// Crying Button
+var cryingButton = document.querySelector("#cryingButton");
+var cryingMessage = document.querySelector("#message")
+
+cryingButton.addEventListener("click", addCryingMessage);
+
+function addCryingMessage() {
+  var cryingMessage = ["Let's hug it out!", "I've got a shoulder for you to cry on!", "Let it out!"];
+  var randomCrying = cryingMessage[Math.floor(Math.random()*cryingMessage.length)];
+  message.innerText = randomCrying;
+}
