@@ -9,8 +9,11 @@ function randomSaying() {
 }
 
 function handleHappy(i) {
-  i = randomSaying()
-  console.log('im in');
+  i = 1
+  if (i === 1) {
+    message.innerText = 'You go!'
+  }
+
 
 
 }
