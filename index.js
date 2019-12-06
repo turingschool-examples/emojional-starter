@@ -1,20 +1,20 @@
-var happyButton = document.querySelector('.happy');
+var sillyButton = document.querySelector('.silly');
 var message = document.querySelector('.message');
 
 
 
 
-happyButton.addEventListener ('click', addHappyMessage);
+sillyButton.addEventListener ('click', addSillyMessage);
 
-function addHappyMessage (){
-  console.log ('addHappyMessage')
+function addSillyMessage (){
+  console.log ('addSillyMessage')
   var random = Math.floor(Math.random() * 3);
   if (random === 0){
-      message.innerText = 'You go!';
+      message.innerText = 'Interesting response';
     } else if (random === 1) {
-      message.innerText = 'Your smile just cheered me up!';
+      message.innerText = 'Sounds.....good?!';
     } else if (random === 2){
-      message.innerText = 'YAY!';;
+      message.innerText = 'Me too';
     } else {
       message.innerText = 'ERROR!!';
   };
