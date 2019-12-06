@@ -15,7 +15,29 @@ function handleHappy(i) {
   }else if (i === 2) {
     message.innerText = 'Your smile just cheered me up!'
   }else if (i === 3) {
-    message.innerText = 'YAY!''
+    message.innerText = 'YAY!'
+  }
+
+}
+function handleSilly(i) {
+  i = randomSaying()
+  if (i === 1) {
+    message.innerText =
+  }else if (i === 2) {
+    message.innerText =
+  }else if (i === 3) {
+    message.innerText =
+  }
+
+}
+function handleCrying(i) {
+  i = randomSaying()
+  if (i === 1) {
+    message.innerText =
+  }else if (i === 2) {
+    message.innerText =
+  }else if (i === 3) {
+    message.innerText =
   }
 
 }
@@ -23,5 +45,5 @@ function handleHappy(i) {
 
 
 happy.addEventListener('click', handleHappy)
-silly.addEventListener('click', handleHappy)
-crying.addEventListener('click', handleHappy)
+silly.addEventListener('click', handleSilly)
+crying.addEventListener('click', handleCrying)
