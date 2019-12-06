@@ -9,12 +9,14 @@ function randomSaying() {
 }
 
 function handleHappy(i) {
-  i = 1
+  i = randomSaying()
   if (i === 1) {
     message.innerText = 'You go!'
+  }else if (i === 2) {
+    message.innerText = 'Your smile just cheered me up!'
+  }else if (i === 3) {
+    message.innerText = 'YAY!''
   }
-
-
 
 }
 
