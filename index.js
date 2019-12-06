@@ -18,6 +18,6 @@ function showSillyResponse() {
 }
 
 function showCryingResponse() {
-  var cryingMsgs = ["Keep your head up.", "Do you want to talk?", "What can I do?"];
+  var cryingMsgs = ["Keep your head up.", "We can cry together!", "Do you want to talk?", "What can I do?"];
   message.innerText = cryingMsgs;
 }
