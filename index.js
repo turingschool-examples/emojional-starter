@@ -8,8 +8,13 @@ function randomSaying() {
   Math.ceil(Math.random() * 3);
 }
 
+function handleHappy(i) {
+  i = randomSaying()
+  console.log('im in');
+
+
+}
 
 
 
-
-happy.addEventListener('click', happy)
+happy.addEventListener('click', handleHappy)
