@@ -4,6 +4,10 @@ var crying = document.querySelector('.crying')
 var message = document.querySelector('.message')
 
 
+function randomSaying() {
+  Math.ceil(Math.random() * 3);
+}
+
 
 
 
