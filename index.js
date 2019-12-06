@@ -6,5 +6,9 @@ var cryingButton = document.querySelector('.crying');
 happyButton.addEventListener('click', displayHappyMessage);
 
 function displayHappyMessage() {
-  message.innerText = "Happy Message";
+  message.innerText = randomizeMessage();
+}
+
+function randomizeMessage() {
+  return Math.floor(Math.random() * 3) + 1;
 }
