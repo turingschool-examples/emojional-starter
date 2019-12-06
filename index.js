@@ -17,6 +17,7 @@ cryingFaceBtn.addEventListener('click', cryingFace);
 function happyFace() {
   var prompts = ['YAY!', 'You go!', 'Your smile just cheered me up.'];
 
+  // Display previous random number.
   console.log(`last random number : ${lastRandNum}`);
   // Set Random number.
   randNumber = randNum(3);
@@ -24,7 +25,8 @@ function happyFace() {
   console.log(`New random number : ${randNumber}`);
 
   while(randNumber == lastRandNum) {
-    randNumber = randNum(max);
+    console.log('generating new random number....');
+    randNumber = randNum(3);
   }
   console.log(`Used random number : ${randNumber}`);
   // Set diff random number to index of prompt
