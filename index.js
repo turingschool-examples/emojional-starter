@@ -5,23 +5,27 @@ var cryingButton = document.querySelector('.crying')
 
 
 
-smileyButton.addEventListener('click', happyResponse)
-  function happyResponse() {
+smileyButton.addEventListener('click', happyResponse);
+function happyResponse() {
   var responses1 = ['dope!', 'nice dude!', 'look at you!'];
-  for(var i = 0; i < responses1.length; i++)
-  messageSpace.innerText += responses1[i]
- }
+  var randomNumber = Math.floor(Math.random()*3)
+  if(responses1[randomNumber] === messageSpace.innerText){
+    happyResponse();
+    } else {
+      messageSpace.innerText = responses1[randomNumber]
+    }
+};
 
-sillyButton.addEventListener('click', sillyResponse)
-  function sillyResponse() {
-  var responses2 = ['this shit crazy!', 'whaaaaat!', 'kind of fun'];
-  for(var i = 0; i < responses1.length; i++)
-  messageSpace.innerText += responses2[i]
-}
+ sillyButton.addEventListener('click', sillyResponse);
+function sillyResponse() {
+   var responses2 = ['whoa', 'crazy!', 'blank'];
+   var randomNumber = Math.floor(Math.random()*3)
+   messageSpace.innerText = responses2[randomNumber]
+ };
 
-cryingButton.addEventListener('click', sadResponse)
+  cryingButton.addEventListener('click', sadResponse);
   function sadResponse() {
-  var responses3 = ['so slose', 'dont be sad!', 'always nest time!'];
-  for(var i = 0; i < responses1.length; i++)
-  messageSpace.innerText += responses3[i]
-}
+    var responses3 = ['oh no', 'better luck!', 'its okay'];
+    var randomNumber = Math.floor(Math.random()*3)
+    messageSpace.innerText = responses3[randomNumber]
+  };
