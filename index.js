@@ -1,20 +1,20 @@
-var sillyButton = document.querySelector('.silly');
+var sadButtont = document.querySelector('.crying');
 var message = document.querySelector('.message');
 
 
 
 
-sillyButton.addEventListener ('click', addSillyMessage);
+sadButton.addEventListener ('click', addSadMessage);
 
-function addSillyMessage (){
-  console.log ('addSillyMessage')
-  var random = Math.floor(Math.random() * 3);
+function addSadMessage (){
+  console.log ('addSadMessage')
+  var random = Math.floor(Math.random() * 4);
   if (random === 0){
-      message.innerText = 'Interesting response';
+      message.innerText = 'Do you want to talk?';
     } else if (random === 1) {
-      message.innerText = 'Sounds.....good?!';
+      message.innerText = 'Keep your head up';
     } else if (random === 2){
-      message.innerText = 'Me too';
+      message.innerText = 'What can I do?';
     } else {
       message.innerText = 'ERROR!!';
   };
