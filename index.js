@@ -1,13 +1,13 @@
 // Variables
 var happyFaceBtn = document.querySelector('.happy');
-// var sillyFaceBtn = document.querySelector('.silly');
-// var cryingFaceBtn = document.querySelector('.crying');
+var sillyFaceBtn = document.querySelector('.silly');
+var cryingFaceBtn = document.querySelector('.crying');
 var message = document.querySelector('.message');
 
 // Event Listeners
 happyFaceBtn.addEventListener('click', happyFace);
 sillyFaceBtn.addEventListener('click', sillyFace);
-// cryingFaceBtn.addEventListener('click', cryingFace);
+cryingFaceBtn.addEventListener('click', cryingFace);
 
 // Functions
 function happyFace() {
@@ -16,11 +16,17 @@ function happyFace() {
   message.innerHTML = prompts[randNum(3)];
 }
 
-// function sillyFace() {
-//   var prompts = ['Me too.', 'Sounds... good?', 'Ok!', 'Interesting response'];
-//
-//   message.innerHTML = prompts[randNum(4)];
-// }
+function sillyFace() {
+  var prompts = ['Me too.', 'Sounds... good?', 'Ok!', 'Interesting response'];
+
+  message.innerHTML = prompts[randNum(4)];
+}
+
+function cryingFace() {
+  var prompts = ['What can I do?', 'Keep your head up.', 'Do you want to talk?', 'We can cry together!'];
+
+  message.innerHTML = prompts[randNum(4)];
+}
 
 
 function randNum(max) {
