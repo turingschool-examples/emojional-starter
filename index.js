@@ -20,3 +20,4 @@ function showSillyResponse() {
 function showCryingResponse() {
   var cryingResponse = `Keep your head up.`;
   message.innerText = cryingResponse;
+}
