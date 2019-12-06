@@ -2,17 +2,18 @@ var happy = document.querySelector('.happy');
 var silly = document.querySelector('.silly');
 var crying = document.querySelector('.crying');
 var message = document.querySelector('.message');
+var repeat
 var nextNum;
-var repeat;
 
 function randomSaying() {
-  return Math.ceil(Math.random() * 3);
+  return Math.floor(Math.random() * 3);
 }
 
 function blockRepeat() {
-  var repeat = randomSaying();
+  repeat = randomSaying();
   if (repeat === nextNum) {
     blockRepeat();
+    console.log(repeat)
   }else {
     nextNum = repeat;
   }
@@ -21,38 +22,21 @@ function blockRepeat() {
 
 function handleHappy(i) {
   i = blockRepeat();
-  if (i === 1) {
-    message.innerText = 'You go!';
-  }else if (i === 2) {
-    message.innerText = 'Your smile just cheered me up!';
-  }else if (i === 3) {
-    message.innerText = 'YAY!';
-  }
-
+  var happySayings = ["You go!", "Your smile just cheered me up!", "YAY!"]
+  message.innerText = happySayings[i]
 }
 
 function handleSilly(i) {
   i = blockRepeat();
-  if (i === 1) {
-    message.innerText = 'Interesting response';
-  }else if (i === 2) {
-    message.innerText = 'Sounds ... good?';
-  }else if (i === 3) {
-    message.innerText = 'Me too.';
-  }
+  var sillySayings = ['Interesting response','Sounds ... good?', 'Me too.']
+  message.innerText = sillySayings[i]
 
 }
 
 function handleCrying(i) {
   i = blockRepeat();
-  if (i === 1) {
-    message.innerText = 'Do you want to talk?';
-  }else if (i === 2) {
-    message.innerText = 'Keep your head up';
-  }else if (i === 3) {
-    message.innerText = 'We can cry together!';
-  }
-
+  var cryingSayings = ['Do you want to talk?', 'Keep your head up', 'We can cry together!']
+  message.innerText = cryingSayings[i] ;
 }
 
 
