@@ -35,11 +35,11 @@ function handleSilly(i) {
 function handleCrying(i) {
   i = randomSaying()
   if (i === 1) {
-    message.innerText =
+    message.innerText = 'Do you want to talk?'
   }else if (i === 2) {
-    message.innerText =
+    message.innerText = 'Keep your head up'
   }else if (i === 3) {
-    message.innerText =
+    message.innerText = 'We can cry together!'
   }
 
 }
