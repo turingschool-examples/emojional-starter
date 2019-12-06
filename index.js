@@ -7,9 +7,11 @@ const happyMessage = ['You go!','Your smile just cheered me up!','YAY!'];
 const sillyMessage = ['Interesting response','Sounds... good?','Me too.'];
 const cryingMessage = ['Do you want to talk?','Keep your head up','We can cry together','What can I do?'];
 
-function showResponse(){
+function showResponse(messageArray){
   //Show Response
-  var i = Math.floor(Math.random()*happyMessage.length);
-  messageElement.innerHTML = happyMessage[i];
+  var i = Math.floor(Math.random()*messageArray.length);
+  messageElement.innerHTML = messageArray[i];
 }
-happyButton.addEventListener('click',showResponse);
+happyButton.addEventListener('click',function(){showResponse(happyMessage)});
+sillyButton.addEventListener('click',function(){showResponse(sillyMessage)});
+cryingButton.addEventListener('click',function(){showResponse(cryingMessage)});
