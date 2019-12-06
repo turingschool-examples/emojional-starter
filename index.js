@@ -7,7 +7,7 @@ var message = document.querySelector('.message');
 // Event Listeners
 happyFaceBtn.addEventListener('click', happyFace);
 sillyFaceBtn.addEventListener('click', sillyFace);
-// cryingFaceBtn.addEventListener('click', cryingFace);
+cryingFaceBtn.addEventListener('click', cryingFace);
 
 // Functions
 function happyFace() {
@@ -18,6 +18,12 @@ function happyFace() {
 
 function sillyFace() {
   var prompts = ['Me too.', 'Sounds... good?', 'Ok!', 'Interesting response'];
+
+  message.innerHTML = prompts[randNum(4)];
+}
+
+function cryingFace() {
+  var prompts = ['What can I do?', 'Keep your head up.', 'Do you want to talk?', 'We can cry together!'];
 
   message.innerHTML = prompts[randNum(4)];
 }
