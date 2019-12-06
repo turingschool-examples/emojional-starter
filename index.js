@@ -2,15 +2,25 @@ var happy = document.querySelector('.happy')
 var silly = document.querySelector('.silly')
 var crying = document.querySelector('.crying')
 var message = document.querySelector('.message')
-
+var nextNum
+var repeat
 
 function randomSaying() {
   return Math.ceil(Math.random() * 3);
 }
-console.log(randomSaying());
-function handleHappy(i) {
-  i = randomSaying()
 
+function blockRepeat() {
+  var repeat = randomSaying()
+  if (repeat === nextNum) {
+    blockRepeat()
+  }
+  nextNum = repeat
+  return repeat
+}
+
+function handleHappy(i) {
+  i = blockRepeat()
+ debugger
   if (i === 1) {
     message.innerText = 'You go!'
   }else if (i === 2) {
@@ -22,7 +32,7 @@ function handleHappy(i) {
 }
 
 function handleSilly(i) {
-  i = randomSaying()
+  i = blockRepeat()
   if (i === 1) {
     message.innerText = 'Interesting response'
   }else if (i === 2) {
@@ -34,7 +44,7 @@ function handleSilly(i) {
 }
 
 function handleCrying(i) {
-  i = randomSaying()
+  i = blockRepeat()
   if (i === 1) {
     message.innerText = 'Do you want to talk?'
   }else if (i === 2) {
