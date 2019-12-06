@@ -5,7 +5,7 @@ const happyMessage = ['You go!','Your smile just cheered me up!','YAY!'];
 
 function showResponse(){
   //Show Response
-
+  var i = Math.floor(Math.random()*happyMessage.length);
   messageElement.innerHTML = happyMessage[1];
 }
 happyButton.addEventListener('click',showResponse);
