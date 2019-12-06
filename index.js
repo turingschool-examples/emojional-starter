@@ -23,3 +23,5 @@ function handleHappy(i) {
 
 
 happy.addEventListener('click', handleHappy)
+silly.addEventListener('click', handleHappy)
+crying.addEventListener('click', handleHappy)
