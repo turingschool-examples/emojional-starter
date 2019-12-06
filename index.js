@@ -6,3 +6,9 @@ var sillyResponses = ["Interesting response", "Sounds ... good?", "Me too."];
 var cryingResponses = ["Do you want to talk?", "Keep your head up", "We can cry together!","What can I do?"]
 
 happyEmoji.addEventListener('click', showResponse);
+
+function showResponse () {
+  var index = Math.floor(Math.random() * 3);
+  var msg = document.querySelector('.message');
+  msg.innerText = happyResponses[index];
+}
