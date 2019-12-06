@@ -13,14 +13,16 @@ function blockRepeat() {
   var repeat = randomSaying()
   if (repeat === nextNum) {
     blockRepeat()
+  }else {
+    nextNum = repeat
+    console.log(nextNum);
   }
-  nextNum = repeat
-  return repeat
+  console.log(nextNum);
+  return nextNum
 }
 
 function handleHappy(i) {
   i = blockRepeat()
- debugger
   if (i === 1) {
     message.innerText = 'You go!'
   }else if (i === 2) {
