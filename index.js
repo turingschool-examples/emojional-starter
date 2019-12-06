@@ -47,7 +47,6 @@ function sillyFace() {
 
   // Set diff random number to index of prompt
   message.innerHTML = prompts[randNumber];
-
   // Reassign the random number used to lastRandNum
   lastRandNum = randNumber;
 }
