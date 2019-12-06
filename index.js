@@ -9,3 +9,9 @@ var cryingMessages = ["Do you want to talk?", "Keep your head up", "We can cry t
 happyButton.addEventListener("click", showHappyMsg);
 sillyButton.addEventListener("click", showSillyMsg);
 cryingButton.addEventListener("click", showCryingMsg);
+
+function showHappyMsg() {
+  randomIndex = Math.floor(Math.random() * happyMessages.length);
+  message.innerHTML = happyMessages[randomIndex];
+  console.log(randomIndex);
+}
