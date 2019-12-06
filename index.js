@@ -4,7 +4,12 @@ var response = document.querySelector("#message")
 happyButton.addEventListener("click", addHappyMessage);
 
 function addHappyMessage() {
-  var happyMessage = "Woo!";
-  message.innerText = happyMessage;
+  var happyMessage = ["Woo!", "Yay!", "You go!"];
+  var randomHappy = happyMessage[Math.floor(Math.random()*happyMessage.length)];
+  message.innerText = randomHappy;
 }
-console.log("buttonclick", addHappyMessage);
+// console.log("buttonclick", randomHappy);
+
+
+// let randomHappy = Math.floor(Math.random() * happyMessage.length);
+// return happyMessage = ["Woo!", "You go!", "Yay!"];
