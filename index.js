@@ -8,22 +8,15 @@ sillyEmoji.addEventListener("click", showSillyResponse);
 cryingEmoji.addEventListener("click", showCryingResponse);
 
 function showHappyResponse() {
-  var responseMsg = `
-
-     `;
-      cardContainerParent.insertAdjacentHTML("afterbegin", responseMsg);
+  var happyResponse = `Your smile just cheered me up.`;
+  message.innerText = happyResponse;
 }
 
 function showSillyResponse() {
-  var responseMsg = `
-
-     `;
-      cardContainerParent.insertAdjacentHTML("afterbegin", responseMsg);
+  var sillyResponse = `Ok!`;
+  message.innerText = sillyResponse;
 }
 
 function showCryingResponse() {
-  var responseMsg = `
-
-     `;
-      cardContainerParent.insertAdjacentHTML("afterbegin", responseMsg);
-}
+  var cryingResponse = `Keep your head up.`;
+  message.innerText = cryingResponse;
