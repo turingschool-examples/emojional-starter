@@ -13,7 +13,6 @@ function blockRepeat() {
   repeat = randomSaying();
   if (repeat === nextNum) {
     blockRepeat();
-    console.log(repeat)
   }else {
     nextNum = repeat;
   }
