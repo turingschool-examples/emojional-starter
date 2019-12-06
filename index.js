@@ -9,3 +9,15 @@ happyEmoji.addEventListener('click', function () {
   let randIndex = Math.floor(Math.random() * 3);
   emojiMessage.innerText = responses[randIndex];
 })
+
+sillyEmoji.addEventListener('click', function () {
+  const responses = ["Interesting response", "Sounds ... good?", "Me too."];
+  let randIndex = Math.floor(Math.random() * 3);
+  emojiMessage.innerText = responses[randIndex];
+})
+
+cryingEmoji.addEventListener('click', function () {
+  const responses = ["Do you want to talk?", "Keep your head up", "We can cry together!", "What can I do?"];
+  let randIndex = Math.floor(Math.random() * 4);
+  emojiMessage.innerText = responses[randIndex];
+})
