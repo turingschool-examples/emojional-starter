@@ -19,17 +19,19 @@ function handleHappy(i) {
   }
 
 }
+
 function handleSilly(i) {
   i = randomSaying()
   if (i === 1) {
-    message.innerText =
+    message.innerText = 'Interesting response'
   }else if (i === 2) {
-    message.innerText =
+    message.innerText = 'Sounds ... good?'
   }else if (i === 3) {
-    message.innerText =
+    message.innerText = 'Me too.'
   }
 
 }
+
 function handleCrying(i) {
   i = randomSaying()
   if (i === 1) {
