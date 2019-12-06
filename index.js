@@ -8,16 +8,16 @@ sillyEmoji.addEventListener("click", showSillyResponse);
 cryingEmoji.addEventListener("click", showCryingResponse);
 
 function showHappyResponse() {
-  var happyResponse = `Your smile just cheered me up.`;
-  message.innerText = happyResponse;
+  var happyMsgs = ["Your smile just cheered me up.", "You go!", "YAY!"];
+  message.innerText = happyMsgs;
 }
 
 function showSillyResponse() {
-  var sillyResponse = `Ok!`;
-  message.innerText = sillyResponse;
+  var sillyMsgs = ["Interesting response", "Ok!", "Me too."];
+  message.innerText = sillyMsgs;
 }
 
 function showCryingResponse() {
-  var cryingResponse = `Keep your head up.`;
-  message.innerText = cryingResponse;
+  var cryingMsgs = ["Keep your head up.", "Do you want to talk?", "What can I do?"];
+  message.innerText = cryingMsgs;
 }
