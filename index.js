@@ -5,11 +5,12 @@ var message = document.querySelector('.message')
 
 
 function randomSaying() {
-  Math.ceil(Math.random() * 3);
+  return Math.ceil(Math.random() * 3);
 }
-
+console.log(randomSaying());
 function handleHappy(i) {
   i = randomSaying()
+
   if (i === 1) {
     message.innerText = 'You go!'
   }else if (i === 2) {
