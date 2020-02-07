@@ -10,5 +10,6 @@ var happyResponses = [
 happyButton.addEventListener("click", messageHappy);
 
 function messageHappy() {
-  message.innerText = happyResponses[0];
+  var responseNum = Math.floor(Math.random() * happyResponses.length);
+  message.innerText = happyResponses[responseNum];
 }
